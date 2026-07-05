@@ -1,13 +1,10 @@
 <%- include('./header.ejs') %>
 <body>
     <ul>
-        <% messages.forEach((message) => { %>
             <li><%= message.text %></li>
             <li><%= message.user %></li>
             <li><%= message.added %></li>
-            <a href="/<%= message.id%>">Open Detail</a>
-        <%})%>
     </ul>
-    <a href="/new">Create New Message</a>
+    <a href="/">Back to Home</a>
 </body>
 </html>
