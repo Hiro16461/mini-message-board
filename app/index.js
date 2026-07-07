@@ -2,8 +2,8 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-const indexRouter = require('./routes/indexRouter')
-const newMessageRouter = require('./routes/newMessageRouter')
+const indexRouter = require('../routes/indexRouter')
+const newMessageRouter = require('../routes/newMessageRouter')
 
 app.set('views', path.join(__dirname, "views"));
 app.set('view engine', "ejs");
